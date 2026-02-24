@@ -1,6 +1,22 @@
 {
-  "features": {
-    "edit_prediction_provider": "copilot",
+  "preview_tabs": {
+    "enable_preview_multibuffer_from_code_navigation": true,
+    "enable_preview_from_file_finder": true,
+  },
+  "edit_predictions": {
+    "mode": "eager",
+    "provider": "copilot",
+  },
+  "agent_servers": {
+    "OpenCode": {
+      "type": "custom",
+      "command": "opencode",
+      "args": ["acp"],
+    },
+  },
+  "colorize_brackets": true,
+  "vim": {
+    "use_smartcase_find": true,
   },
   "git_panel": {
     "dock": "right",
@@ -13,6 +29,10 @@
   "scrollbar": {
     "diagnostics": "all",
   },
+  "toolbar": {
+    "code_actions": true,
+    "breadcrumbs": true,
+  },
   "diagnostics": {
     "inline": {
       "enabled": true,
@@ -21,24 +41,28 @@
   "minimap": { "show": "always" },
   "icon_theme": "Catppuccin Macchiato",
   "agent": {
-    "default_view": "thread",
-    "single_file_review": false,
-    "use_modifier_to_send": false,
-    "enable_feedback": false,
-    "default_profile": "ask",
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-sonnet-4",
-    },
+    "show_turn_stats": true,
+    "play_sound_when_agent_done": true,
     "button": true,
     "dock": "right",
     "enabled": true,
   },
   "soft_wrap": "editor_width",
+  "show_wrap_guides": true,
   "vim_mode": false,
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
+  },
+  "inlay_hints": {
+    "enabled": true,
+  },
+  "tab_bar": {
+    "show": true,
+  },
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware",
   },
   "terminal": {
     "shell": {
@@ -68,8 +92,7 @@
   "buffer_font_family": "Hack Nerd Font",
   "theme": {
     "mode": "system",
-    "light": "One Light",
-    "dark": "Catppuccin Macchiato (Blur)",
+    "light": "Catppuccin Macchiato (Blur) [Light]",
+    "dark": "Catppuccin Mocha (Blur)",
   },
 }
-
