@@ -1,0 +1,10 @@
+layout {
+    always-center-single-column
+}
+
+window-rule {
+    match title="ArchBTW"
+    open-floating true
+    default-column-width { fixed 1250; }
+    default-window-height { fixed 475; }
+}
