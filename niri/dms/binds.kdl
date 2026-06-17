@@ -6,14 +6,8 @@ binds {
 
     // === Application Launchers ===
     Mod+T hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
-    Mod+S hotkey-overlay-title="Open Sysinfo" {
-        spawn "ghostty" "--title=ArchBTW" "-e" "/home/singu/.local/bin/sysinfo"
-    }
     Mod+Space hotkey-overlay-title="Application Launcher" {
         spawn "dms" "ipc" "call" "spotlight" "toggle";
-    }
-    Mod+Shift+Space hotkey-overlay-title="Open File Manager" {
-        spawn "ghostty" "--title='File Manager'" "-e" "yazi" "~"
     }
     Mod+V hotkey-overlay-title="Clipboard Manager" {
         spawn "dms" "ipc" "call" "clipboard" "toggle";
@@ -22,18 +16,8 @@ binds {
         spawn "dms" "ipc" "call" "processlist" "focusOrToggle";
     }
 
-    // Home: Windows + Shift + F1
-    Super+Shift+F1 {
-        spawn "/Data/apps/cams/watch.sh" "home";
-    }
-
-    // Office: Windows + Shift + F2
-    Super+Shift+F2 {
-        spawn "/Data/apps/cams/watch.sh" "office";
-    }
-
     Mod+B hotkey-overlay-title="Brave" {
-        spawn "brave-origin-nightly";
+        spawn "com.brave.Browser";
     }
 
     Mod+Z hotkey-overlay-title="Zed" {
