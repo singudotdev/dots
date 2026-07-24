@@ -562,7 +562,7 @@
     "niri": "profile_1777314845197_gnlcsi"
   },
   "displayProfileAutoSelect": false,
-  "displayShowDisconnected": false,
+  "displayShowDisconnected": true,
   "displaySnapToEdge": true,
   "connectedFrameBarStyleBackups": {},
   "barConfigs": [
@@ -601,6 +601,11 @@
         },
         {
           "id": "memUsage",
+          "enabled": true,
+          "minimumWidth": true
+        },
+        {
+          "id": "cpuTemp",
           "enabled": true,
           "minimumWidth": true
         },

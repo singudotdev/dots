@@ -31,18 +31,6 @@
             "focusAtStartup": true
           }
         },
-        "eDP-1": {
-          "mode": "1920x1080@120.030",
-          "position": {
-            "x": 3840,
-            "y": 133
-          },
-          "scale": 2,
-          "transform": "normal",
-          "vrr": false,
-          "disabled": false,
-          "niri": {}
-        },
         "HDMI-A-1": {
           "mode": "1920x1080@60.000",
           "position": {
