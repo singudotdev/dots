@@ -12,5 +12,6 @@ cp -r ./fish/* ~/.config/fish/
 cp -r ./ghostty/* ~/.config/ghostty/
 cp -r ./niri/* ~/.config/niri/
 cp -r ./zed/* ~/.config/zed/
+mkdir -p ~/.config/starship
 cp -r ./starship/* ~/.config/starship/
 cp ./starship/starship.toml ~/.config/starship.toml
