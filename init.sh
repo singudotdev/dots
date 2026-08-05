@@ -31,6 +31,7 @@ link_replace "${DOTFILES_DIR}/ghostty" "${USER_HOME}/.config/ghostty"
 link_replace "${DOTFILES_DIR}/niri" "${USER_HOME}/.config/niri"
 link_replace "${DOTFILES_DIR}/zed" "${USER_HOME}/.config/zed"
 link_replace "${DOTFILES_DIR}/starship/starship.toml" "${USER_HOME}/.config/starship.toml"
+link_replace "${DOTFILES_DIR}/fetch" "${USER_HOME}/.config/fetch"
 
 echo ""
 echo "[OK]: All configurations linked successfully!"
