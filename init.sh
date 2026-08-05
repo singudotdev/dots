@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo pacman -Syyu
-sudo pacman -Sy zed vim ghostty starship fish bottom eza bat fastfetch flatpak flatseal nerd-fonts
+sudo pacman -Sy zed vim ghostty starship fish bottom eza bat fastfetch flatpak flatseal ttf-hack-nerd
 
 flatpak install -y com.brave.Browser com.github.tchx84.Flatseal com.termius.Termius com.vysp3r.ProtonPlus im.riot.Riot org.kde.kalk org.telegram.desktop
 
