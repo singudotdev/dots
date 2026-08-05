@@ -321,7 +321,7 @@
     }
   },
   "launcherLogoMode": "custom",
-  "launcherLogoCustomPath": "/data/pictures/logos/taskbar-icon.png",
+  "launcherLogoCustomPath": "/home/singu/Pictures/logos/taskbar-icon.png",
   "launcherLogoColorOverride": "",
   "launcherLogoColorInvertOnMode": false,
   "launcherLogoBrightness": 0.5,
