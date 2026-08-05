@@ -38,7 +38,7 @@ link_replace "${DOTFILES_DIR}/fetch" "${USER_HOME}/.config/fetch"
 
 echo ""
 echo "[OK]: All configurations linked successfully!"
-echo "[LOG]: Please check /var/log/dots-init.log for details."
+echo "[INFO]: Please check /var/log/dots-init.log for details."
 
 echo ""
 echo "[INFO]: Rebooting system..."
