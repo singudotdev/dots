@@ -2,7 +2,7 @@
 
 # Update system and install packages
 sudo pacman -Syyu --noconfirm
-sudo pacman -Sy zed vim ghostty starship fish bottom eza bat fastfetch flatpak flatseal ttf-hack-nerd ttf-input-nerd --noconfirm
+sudo pacman -Sy zed vim ghostty starship fish bottom eza bat fastfetch flatpak flatseal dosfstools ttf-hack-nerd ttf-input-nerd --noconfirm
 
 flatpak install -y com.brave.Browser com.github.tchx84.Flatseal com.termius.Termius com.vysp3r.ProtonPlus im.riot.Riot org.kde.kalk org.telegram.desktop
 
