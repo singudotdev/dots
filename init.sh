@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Log execution in file
+exec > >(tee -a "/var/log/dots-init.log") 2>&1
+
 sudo pacman -Syyu
 sudo pacman -Sy zed vim ghostty starship fish bottom eza bat fastfetch flatpak flatseal ttf-hack-nerd ttf-input-nerd
 
@@ -35,3 +38,9 @@ link_replace "${DOTFILES_DIR}/fetch" "${USER_HOME}/.config/fetch"
 
 echo ""
 echo "[OK]: All configurations linked successfully!"
+echo "[LOG]: Please check /var/log/dots-init.log for details."
+
+echo ""
+echo "[INFO]: Rebooting system..."
+sleep 5
+sudo reboot
