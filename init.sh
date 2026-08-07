@@ -4,7 +4,7 @@
 sudo pacman -Syyu --noconfirm
 sudo pacman -Sy man-db zed vim ghostty starship fish bottom eza bat fastfetch flatpak flatseal ttf-hack-nerd ttf-input-nerd --noconfirm
 
-flatpak install -y com.brave.Browser com.github.tchx84.Flatseal com.termius.Termius com.vysp3r.ProtonPlus im.riot.Riot org.kde.kalk org.telegram.desktop
+flatpak install -y com.brave.Browser com.github.tchx84.Flatseal com.termius.Termius im.riot.Riot org.kde.kalk org.telegram.desktop
 
 # Install DankMaterialShell
 curl -fsSL https://install.danklinux.com | sh
