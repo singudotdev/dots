@@ -22,7 +22,7 @@ Running `init.sh` on a fresh Arch install will:
 
 1. Update the system and install core packages via `pacman`:
    `zed`, `vim`, `ghostty`, `starship`, `fish`, `bottom`, `eza`, `bat`, `fastfetch`, `flatpak`, `flatseal`, `ttf-hack-nerd`, `ttf-input-nerd`
-2. Install a set of Flatpak apps: Brave Browser, Flatseal, Termius, ProtonPlus, Element (Riot), Kalk, and Telegram Desktop
+2. Install a set of Flatpak apps: Brave Browser, Flatseal, Termius, Element (Riot), Kalk, and Telegram Desktop
 3. Install [DankMaterialShell](https://github.com/AvengeMedia/DankMaterialShell) via its official install script
 4. Symlink each config directory in this repo into the appropriate location under `~/.config` (replacing anything already there)
 5. Reboot the system to apply everything
