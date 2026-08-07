@@ -45,6 +45,9 @@ sudo sed -i 's/^#AutoEnable=true/AutoEnable=false/' /etc/bluetooth/main.conf
 git config --global user.email "contact@singu.dev"
 git config --global user.name "singudotdev"
 
+# Install Claude Code
+curl -fsSL https://claude.ai/install.sh | bash
+
 # Echo completion message
 echo ""
 echo "[OK]: All configurations linked successfully!"
