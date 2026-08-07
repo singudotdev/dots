@@ -2,7 +2,7 @@
 
 # Update system and install packages
 sudo pacman -Syyu --noconfirm
-sudo pacman -Sy man-db zed vim ghostty starship fish bottom eza bat fastfetch flatpak flatseal ollama opencode ttf-hack-nerd ttf-input-nerd --noconfirm
+sudo pacman -Sy git man-db zed vim ghostty starship fish bottom eza bat fastfetch flatpak flatseal ollama opencode ttf-hack-nerd ttf-input-nerd --noconfirm
 
 flatpak install -y com.brave.Browser com.github.tchx84.Flatseal com.termius.Termius im.riot.Riot org.kde.kalk org.telegram.desktop
 
@@ -40,6 +40,10 @@ link_replace "${DOTFILES_DIR}/fetch" "${USER_HOME}/.config/fetch"
 
 # Disable bluetooth at start
 sudo sed -i 's/^#AutoEnable=true/AutoEnable=false/' /etc/bluetooth/main.conf
+
+# Set git user config
+git config --global user.email "contact@singu.dev"
+git config --global user.name "singudotdev"
 
 # Echo completion message
 echo ""
