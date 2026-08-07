@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# This script sets up a new Arch Linux system by updating the system, installing necessary packages, creating symlinks for configuration files, and configuring git and other tools.
+echo "=== Arch Linux Setup Script ==="
+
+# Ask for executing user confirmation
+read -p "This script will update the system, install packages, and configure settings. Do you want to continue? (y/n): " confirm
+if [[ "$confirm" != "y" && "$confirm" != "Y" ]]; then
+    echo "Operation cancelled by user."
+    exit 1
+fi
+
 # Update system and install packages
 sudo pacman -Syyu --noconfirm
 sudo pacman -Sy git man-db zed vim ghostty starship fish bottom eza bat fastfetch flatpak flatseal ollama opencode ttf-hack-nerd ttf-input-nerd --noconfirm
