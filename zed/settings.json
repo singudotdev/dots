@@ -1,4 +1,34 @@
 {
+  "agent": {
+    "default_model": {
+      "provider": "ollama",
+      "model": "qwen2.5-coder:7b",
+    },
+  },
+  "language_models": {
+    "ollama": {
+      "api_url": "http://localhost:11434",
+      "context_window": 32768,
+      "auto_discover": false,
+      "available_models": [
+        {
+          "name": "qwen2.5-coder:7b",
+          "display_name": "Qwen2.5 Coder 7B",
+          "max_tokens": 32768,
+          "supports_tools": true,
+        },
+      ],
+    },
+  },
+  "edit_predictions": {
+    "provider": "ollama",
+    "ollama": {
+      "api_url": "http://localhost:11434",
+      "model": "qwen2.5-coder:7b-base",
+      "prompt_format": "infer",
+      "max_output_tokens": 512,
+    },
+  },
   "base_keymap": "Zed",
   "diff_view_style": "split",
   "cli_default_open_behavior": "existing_window",
@@ -8,10 +38,6 @@
   "preview_tabs": {
     "enable_preview_multibuffer_from_code_navigation": true,
     "enable_preview_from_file_finder": true,
-  },
-  "edit_predictions": {
-    "mode": "eager",
-    "provider": "copilot",
   },
   "file_finder": {
     "file_icons": true, // Show/hide file icons
@@ -153,20 +179,7 @@
   "icon_theme": {
     "mode": "dark",
     "light": "Catppuccin Macchiato",
-    "dark": "Catppuccin Macchiato"
-  },
-  "agent": {
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5-mini",
-      "enable_thinking": true,
-      "effort": "high",
-    },
-    "show_turn_stats": true,
-    "play_sound_when_agent_done": "always",
-    "button": true,
-    "dock": "right",
-    "enabled": true,
+    "dark": "Catppuccin Macchiato",
   },
   "soft_wrap": "editor_width",
   "show_wrap_guides": true,
