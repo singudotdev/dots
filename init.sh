@@ -12,9 +12,9 @@ fi
 
 # Update system and install packages
 sudo pacman -Syyu --noconfirm
-sudo pacman -Sy git man-db zed vim ghostty starship fish bottom eza bat fastfetch flatpak flatseal ollama opencode steam lib32-nvidia-utils com.vysp3r.ProtonPlus proton-vpn-gtk-app gnome-keyring ttf-hack-nerd ttf-input-nerd --noconfirm
+sudo pacman -Sy git man-db zed vim ghostty starship fish bottom eza bat fastfetch flatpak flatseal ollama opencode steam lib32-nvidia-utils podman proton-vpn-gtk-app gnome-keyring ttf-hack-nerd ttf-input-nerd --noconfirm
 
-flatpak install -y com.brave.Browser com.github.tchx84.Flatseal com.termius.Termius im.riot.Riot org.kde.kalk org.telegram.desktop
+flatpak install -y com.brave.Browser com.github.tchx84.Flatseal com.termius.Termius im.riot.Riot org.kde.kalk org.telegram.desktop com.vysp3r.ProtonPlus
 
 # Install DankMaterialShell
 curl -fsSL https://install.danklinux.com | sh
